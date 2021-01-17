@@ -154,16 +154,30 @@ address {
 
 /* hero */
 
-.hero {
-	/* width: 100%; */
+.hero-section {
+	width: 100%;
+	/* max-width: 1600px; */
+	min-height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #c4c4c4;
+
+	/* background-image: linear-gradient(to right rgba(47, 48, 58, 0.4)); */
+	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4)), url("../image/heropage.jpg");
+	/* background-image: url("../image/heropage.jpg"); */
+
+	/* background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover; */
 
 	padding-top: 200px;
 	padding-bottom: 200px;
 
 	text-align: center;
-	background: #2f303a;
 }
 
+.hero {
+}
 .hero-title {
 	margin-bottom: 30px;
 
@@ -204,12 +218,45 @@ address {
 	list-style: none;
 }
 
+/* ::before {
+	padding: 25px 25px;
+} */
+
+.description-title::before {
+	display: block;
+	content: "";
+	/* width: 70px; */
+	height: 120px;
+	background: rgba(245, 244, 250, 1);
+	border-radius: 4px;
+	/* background-image: url(../svg/antena.svg); */
+	/* background-size: contain; */
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.description-title:nth-child(1)::before {
+	background-image: url("../svg/antena.svg");
+}
+
+.description-title:nth-child(2)::before {
+	background-image: url("../svg/clock.svg");
+}
+
+.description-title:nth-child(3)::before {
+	background-image: url("../svg/diagram.svg");
+}
+
+.description-title:nth-child(4)::before {
+	background-image: url("../svg/astronaut.svg");
+}
+
 .description-title {
 	margin-left: 30px;
 	flex-basis: calc(100% / 4 - 30px);
 }
 .features-title {
-	margin-bottom: 10px;
+	margin-top: 30px;
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 1.14;
@@ -218,6 +265,7 @@ address {
 }
 
 .features-title-text {
+	margin-top: 10px;
 	color: var(--title-text-color);
 	font-size: 14px;
 	line-height: 1.71;
