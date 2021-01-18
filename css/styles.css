@@ -339,6 +339,10 @@ address {
 	padding-bottom: 94px;
 }
 
+.our-team {
+	background-color: rgba(245, 244, 250, 1);
+}
+
 .section-title-team {
 	font-weight: bold;
 	font-size: 36px;
