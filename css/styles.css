@@ -521,6 +521,7 @@ footer {
 
 .bottom-line {
 	display: flex;
+	align-items: baseline;
 }
 
 .logo-f {
